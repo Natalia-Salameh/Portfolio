@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+header b {
+  color: #1DA7BA;
+  font-size: xx-large;
+}
+
+.navigation a {
+  color: #1da7ba;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.navigation a:hover {
+  color: #178391;
+}
+
+#home {
+  margin: 150px;
+  font-size: 50px;
+  margin-bottom: 19.5%;
+}
+
+.image {
+  margin: 7%;
+  width: 450px;
+  height: 420px;
+  bottom: 0;
+  right: 150px;
+  position: absolute;
+
+}
+
+.image img {
+  height: 100%;
+  left: 40%;
+  bottom: 0;
+  position: absolute;
+}
+
+#my_photo {
+  border-radius: 50%;
+  margin-left: 5%;
+}
+
+.about_me {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.about_me>p {
+  margin: 150px;
+  padding: 50px;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.text {
+  color: #1ca8ba;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-image: url("Asset 2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.grid-container>div {
+  margin: 80px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.containerr {
+  position: relative;
+}
+
+.imagee {
+  display: block;
+  width: 550px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(229, 227, 227, 0.366);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.containerr:hover .overlay {
+  opacity: 1;
+}
+
+#weeks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+#background2 {
+  background-image: url("Asset 3.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: aliceblue;
+}
+
+#weeks>div {
+  margin: 10px;
+  padding: 40px;
+}
+
+#weeks p {
+  background-color: white;
+  padding: 5%;
+  border: 1.5px solid #178391;
+}
+
+.title {
+  color: white;
+  background-color: #178391;
+  text-align: center;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.pill-nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #178391;
+  margin-block: 10px;
+}
+
+.pill-nav a:hover {
+  background-color: #1ca8ba;
+  color: black;
+}
+
+footer {
+  background-color: #1ca8ba;
+  padding: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .image {
+    display: none;
+  }
+
+  .about_me {
+    grid-template-columns: auto;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .weeks {
+    grid-template-columns: auto auto;
+  }
+
+  .about_me>p {
+    margin: 10px;
+    padding: 10px;
+  }
+
+}
